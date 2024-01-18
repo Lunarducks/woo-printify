@@ -7,4 +7,4 @@ hooks:
   AfterInstall:
     - location: Scripts/composer-install.sh
       runas: root
-      timeout: 360
+      timeout: 300
