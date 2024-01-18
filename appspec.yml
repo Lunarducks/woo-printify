@@ -2,13 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/
+    destination: /var/www/app.lunarducks.com/
 hooks:
   AfterInstall:
-    - location: script/npm-install.sh
+    - location: Script/composer-install.sh
       runas: root
       timeout: 360
-  ApplicationStart:
-    - location: script/npm-start.sh
-      runas: root
-      timeout: 600
