@@ -5,6 +5,6 @@ files:
     destination: /var/www/app.lunarducks.com/
 hooks:
   AfterInstall:
-    - location: Script/composer-install.sh
+    - location: Scripts/composer-install.sh
       runas: root
       timeout: 360
